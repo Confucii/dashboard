@@ -25,43 +25,48 @@
     grid-row: 1 / 3;
     grid-template-rows: 1fr 4fr 2fr 3fr;
     gap: 1vh;
+    background-color: #E96479;
+    color: #F5E9CF;
 }
 
 .sidebar > div {
-    border: 1px solid black;
     padding-left: 3vw;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
-.logo {
-    display: grid;
-    align-items: center;
-}
-
-.navigation {
-    display: grid;
-    grid-template-rows: repeat(6, 1fr);
-    align-items: center;
-}
-
+.logo, 
+.navigation,
 .utilities {
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
     align-items: center;
 }
 
-:is(.nav-elem, .util-elem, .logo) {
+.nav-elem,
+.util-elem,
+.logo {
     display: grid;
     grid-auto-flow: column;
     justify-content: start;
     align-items: center;
     gap: 20px;
+    padding-right: 10px;
+}
+
+.sidebar > .logo {
+    font-size: 1.7rem;
 }
 
 :is(.nav-elem, .util-elem, .logo) img {
+    position: relative;
+    bottom: 1px;
     width: 2rem;
     height: 2rem;
-    border: 1px solid black;
+    filter: invert(73%) sepia(9%) saturate(1161%) hue-rotate(128deg) brightness(93%) contrast(89%);
+}
+
+.logo img {
+    width: 3rem;
+    height: 3rem;
 }
 
 .header {
