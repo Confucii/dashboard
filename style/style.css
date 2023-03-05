@@ -76,13 +76,10 @@
 }
 
 .header {
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2fr 1fr;
     grid-template-rows: repeat(2, 1fr);
     background-color: #F5E9CF;
-}
-
-.header > div {
-    border: 1px solid black;
+    padding-left: 4%;
 }
 
 .search {
@@ -90,7 +87,6 @@
     grid-template-columns: auto 1fr;
     gap: 20px;
     align-items: center;
-    padding-left: 10%;
 }
 
 #search {
@@ -102,7 +98,7 @@
     border-radius: 15px;
     font-size: 1.2rem;
     padding-left: 3%;
-    width: 80%;
+    width: 90%;
 }
 
 .user-info {
@@ -127,11 +123,57 @@
     border-radius: 50%;
     width: 4rem;
     height: 4rem;
-    border: 1px solid black;
+}
+
+.header-bottom {
+    grid-column: 1 / 3;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 8fr 5fr;
+    gap: 20px;
+    padding-bottom: 10px;
+}
+
+.header-bottom > * {
+    height: 100%;
+}
+
+.header-bottom > img {
+    justify-self: center;
+    height: 95%;
+    width: 95%;
+    border-radius: 50%;
+}
+
+.greeting {
+    display: grid;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #E96479;
+}
+
+.name {
+    align-self: start;
+    font-size: 1.8rem;
+    font-weight: 600;
 }
 
 .buttons {
-    grid-column: 1 / 3;
+    display: grid;
+    grid-auto-flow: column;
+    justify-items: center;
+    align-items: center;
+    padding-right: 4%;
+}
+
+.buttons button {
+    border: none;
+    border-radius: 20px;
+    width: 75%;
+    height: 45%;
+    font-size: 1.2rem;
+    color: white;
+    background-color: #E96479;
 }
 
 .content {
