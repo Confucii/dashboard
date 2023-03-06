@@ -17,8 +17,11 @@
 .sidebar,
 .header,
 .content {
-    border: 1px solid black;
     display: grid;
+}
+
+.content {
+    border: 1px solid black;
 }
 
 .sidebar {
@@ -101,6 +104,12 @@
     width: 90%;
 }
 
+#search:focus, 
+#search:hover,
+#search:hover  {
+    background-color: #7DB9B6;
+}
+
 .user-info {
     display: grid;
     grid-auto-flow: column;
@@ -117,6 +126,10 @@
     width: 2rem;
     height: 2rem;
     filter: invert(55%) sepia(73%) saturate(1012%) hue-rotate(309deg) brightness(91%) contrast(100%);;
+}
+
+.user-info > img:first-child:hover {
+    filter: invert(73%) sepia(9%) saturate(1161%) hue-rotate(128deg) brightness(93%) contrast(89%);
 }
 
 .user-info > img:nth-child(2) {
@@ -174,6 +187,10 @@
     font-size: 1.2rem;
     color: white;
     background-color: #E96479;
+}
+
+.buttons button:hover {
+    background-color: #7DB9B6;
 }
 
 .content {
