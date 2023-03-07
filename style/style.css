@@ -204,6 +204,7 @@
 }
 
 .projects {
+    font-size: 1.4rem;
     grid-row: 1 / 3;
 }
 
@@ -259,6 +260,7 @@
     align-items: center;
     grid-template-columns: 4rem 1fr;
     grid-auto-flow: column;
+    row-gap: 3px;
 }
 
 .trend > img {
@@ -266,4 +268,20 @@
     height: 3rem;
     border-radius: 50%;
     grid-row: 1/3;
+}
+
+.trend > p {
+    font-size: 0.9rem;
+    font-weight: 500;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.trend > p:first-of-type {
+    align-self: end;
+}
+
+.trend > p:last-of-type {
+    align-self: start;
+    color: rgb(110, 110, 110);
 }
