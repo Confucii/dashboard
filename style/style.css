@@ -103,12 +103,6 @@
     width: 90%;
 }
 
-#search:focus, 
-#search:hover,
-#search:hover  {
-    background-color: #7DB9B6;
-}
-
 .user-info {
     display: grid;
     grid-auto-flow: column;
@@ -188,7 +182,7 @@
 }
 
 .buttons button:hover {
-    background-color: #7DB9B6;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .content {
@@ -225,6 +219,7 @@
     background-color: #7DB9B6;
     overflow: hidden;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-left: 8px solid #4D455D;
 }
 
 .project h4 {
