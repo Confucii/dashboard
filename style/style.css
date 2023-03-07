@@ -80,6 +80,8 @@
     grid-template-rows: repeat(2, 1fr);
     background-color: #F5E9CF;
     padding-left: 4%;
+    z-index: 1;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .search {
@@ -221,10 +223,12 @@
     gap: 1px;
     padding: 5%;
     background-color: #7DB9B6;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .project h4 {
-    font-size: 1.2rem;
+    font-size: 18px;
 }
 
 .project p {
@@ -266,6 +270,7 @@
     border-radius: 15px;
     padding: 2% 5%;
     background-color: #7DB9B6;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .announcement {
