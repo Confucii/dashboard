@@ -239,6 +239,19 @@
     color: rgb(99, 99, 99);
 }
 
+.project-images {
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: 1.5rem;
+    justify-content: end;
+    gap: 5%
+}
+
+.project-images img {
+    height: 1.5rem;
+}
+
+
 .announcements,
 .trending {
     font-size: 1.4rem;
