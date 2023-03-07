@@ -186,6 +186,7 @@
     font-size: 1.2rem;
     color: white;
     background-color: #E96479;
+    min-width: max-content;
 }
 
 .buttons button:hover {
@@ -196,6 +197,7 @@
     display: grid;
     grid-template-columns: 3fr 1fr;
     row-gap: 5%;
+    column-gap: 1.2vw;
     padding: 2% 2% 5%;
 }
 
@@ -206,6 +208,35 @@
 .projects {
     font-size: 1.4rem;
     grid-row: 1 / 3;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(325px, 1fr));
+    grid-template-rows: 1.5rem;
+    gap: 25px;
+    grid-auto-rows: max-content;
+}
+
+.projects h3 {
+    grid-column: 1/-1;
+}
+
+.project {
+    height: 200px;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: grid;
+    grid-template-rows: auto 3fr 1fr;
+    gap: 1px;
+    padding: 5%;
+}
+
+.project h4 {
+    font-size: 1.2rem;
+}
+
+.project p {
+    font-weight: 500;
+    font-size: 1rem;
+    color: rgb(99, 99, 99);
 }
 
 .announcements,
@@ -225,10 +256,6 @@
     padding: 2% 5%;
 }
 
-.trending-container > div {
-    border: 1px solid black;
-}
-
 .announcement {
     overflow: hidden;
     display: grid;
@@ -243,6 +270,7 @@
     margin-top: 5px;
     font-weight: 500;
     font-size: 0.8rem;
+    color: rgb(99, 99, 99)
 }
 
 .announcement + .announcement {
